@@ -1,0 +1,10 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    background-color: gray;
+    align-items: center;
+}
+h1{
+    color: white;
+}
