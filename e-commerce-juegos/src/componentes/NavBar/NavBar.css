@@ -1,10 +1,31 @@
 .navbar{
     display: flex;
     justify-content: space-between;
-    width: 100vw;
     background-color: gray;
     align-items: center;
 }
-h1{
-    color: white;
+.ulNavBar{
+    display: flex;
+    justify-content: space-between;
+    background-color: gray;
+    align-items: center;
+    justify-content: center;
+    
 }
+li{
+    text-decoration: none;
+    width: 150px;
+    list-style-type: none;
+    color: aliceblue;
+}
+.H1logo{
+    color: blanchedalmond;
+    text-decoration: dotted;
+    font-size: 60px;
+}
+.AdeLink{
+    color: blanchedalmond;
+    text-decoration: none;
+    font-size: 30px;
+}
+

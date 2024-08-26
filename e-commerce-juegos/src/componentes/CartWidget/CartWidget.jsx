@@ -1,11 +1,20 @@
-import React from 'react'
-import { IoCartOutline } from "react-icons/io5";
+import React, {useContext} from 'react'
+import { IoCartOutline,   } from "react-icons/io5";
+import { cartContext } from '../../context/cartContext';
+import { CiBellOn, CiShoppingCart } from 'react-icons/ci';
+
+
+
 
 const CartWidget = () => {
+  const cart = useContext(cartContext)
+
+
   return (
-    <div>
-        <span>0</span>
-        <IoCartOutline />
+    <div className='carrito'>
+        <CiBellOn />
+        <span>{cart.cuenta}</span>
+        <CiShoppingCart />
     </div>
   )
 }

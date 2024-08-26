@@ -1,6 +1,9 @@
 import './App.css'
-import ItemListContainer from './componentes/itemListContainer/itemListContainer'
+import { ItemDetailContainer } from './componentes/ItemDetailContainer/ItemDetailContainer';
+import ItemListContainer from './componentes/itemListContainer/itemListContainer';
 import NavBar from './componentes/NavBar/NavBar'
+import {BrowserRouter, Route, Routes} from 'react-router-dom'
+import { CartContextProvider } from './context/cartContext';
 
 
 function App() {
@@ -8,8 +11,17 @@ function App() {
 
   return (
     <>
-      <NavBar />
-      <ItemListContainer greeting="Saludo a Todos"/>
+
+    <CartContextProvider>
+      <BrowserRouter>
+        <NavBar />
+        <Routes>
+          <Route path='/' element={<ItemListContainer/>}/>
+          <Route path='/categoria/:cat' element={<ItemListContainer/>}/>
+          <Route path='/detalle/:id' element={<ItemDetailContainer/>}/>
+        </Routes>
+      </BrowserRouter>
+    </CartContextProvider>
     </>
   )
 }

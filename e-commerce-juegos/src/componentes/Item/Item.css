@@ -1,0 +1,60 @@
+.ItemCard{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5%;
+    color: black;
+    margin-top: 10px;
+    background-color: white;
+}
+
+img{
+    display: flex;
+    flex-direction: column;
+    width: 380px;
+    height: 400px;
+    border-radius: 15px; 
+    transition: transform 0.3s, box-shadow 0.3s; 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); 
+}
+img:hover{
+    transform: scale(1.05); 
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3); 
+}
+
+button{
+    margin-bottom: 10px;
+}
+
+.LinkDetalle{
+    text-decoration: none;
+    color: black;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border: 2px solid #4CAF50;
+    border-radius: 5px;
+    display: inline-block;
+    font-size: 16px;
+    text-align: center;
+    margin: 5px;
+}
+
+.LinkDetalle:hover{
+    background-color: #45a049;
+    border-color: #1e5945;
+}
+
+
+.detalleProducto{
+    display: inline-block;
+    justify-content: center;
+    text-align: center;
+}
+.detalleProducto img{
+    margin: auto;
+    display: block;
+}
